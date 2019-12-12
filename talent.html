@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Talented</title>
+    <style>
+      .talent {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .talentp {
+        margin-top: 50px;
+      }
+
+      .img-thumbnail {
+        height: 300px;
+        border-style: none;
+      }
+
+      .klik {
+        margin-left: 120px;
+        background: #c8c7c7;
+        color: #fbd72f;
+        border-style: none;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="talent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7" style="margin-top: 80px;">
+            <div class="row">
+              <span style="transform: rotate(270deg); color: #fbd608; font-weight: bold;">WHO WE ARE</span>
+              <h1>Meet Our<br/><strong>talented</strong> Team</h1>              
+            </div>
+            <div class="row">
+              <p class="talentp">Here iam introducting my new young talented team, we are the people work together for the success story</p>
+            </div>
+          </div>
+          <div class="col-md-6" id="bener" style="margin-top: 80px;">
+            <img src="talent1.jpg" alt="gambar"  class="img-thumbnail" width="200px" height="200px" style="z-index: 0;">
+            <div class="slid" style="height: 200px; position: absolute; top: 0; background: black; opacity: .4; display: none; z-index: 1;"></div>
+            <div class="slid bg transparent" style="height: 200px; width: 200px; position: absolute; top: 0; left: 4%; display: none; color: white; z-index: 2;">
+              <h1>tiara</h1>
+              <p>he is developer</p>
+              <a href="#"><i class="fa fa-facebook-square"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+            <img src="talent2.jpg" alt="gambar" class="img-thumbnail" width="200px" height="200px">
+            <br>
+            <button class="klik"><i class="fa fa-chevron-left"></i></button>
+            <button class="klik"><i class="fa fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#bener").mouseenter(function(){
+          $(".slid").slideDown("fast");
+        });
+        $("#bener").mouseleave(function(){
+          $(".slid").slideUp("fast");
+        })
+      });
+    </script>
+  </body>
+</html>
